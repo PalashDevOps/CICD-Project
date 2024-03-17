@@ -5,7 +5,7 @@ set -e
 IMAGE_NAME="palashdevops4499/simple-python-flask-app"
 
 # pulling docker image from Docker Hub
-docker pull $IMAGE_NAME
+docker pull -a $IMAGE_NAME
 
 # Run the Docker container from the image
 docker run -d -p 5000:5000 $IMAGE_NAME
